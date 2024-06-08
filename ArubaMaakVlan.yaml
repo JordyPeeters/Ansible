@@ -4,7 +4,7 @@
   gather_facts: false
   collections:
     - arubanetworks.aoscx
-  task:
+  tasks:
   - name: Create VLAN 200 with description
     aoscx_vlan:
       vlan_id: 200
