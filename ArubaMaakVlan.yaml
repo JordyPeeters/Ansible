@@ -1,4 +1,4 @@
-- name: Ping a device
+---
   hosts: all
   gather_facts: no
   tasks:
