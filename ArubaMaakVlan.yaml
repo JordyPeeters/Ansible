@@ -5,7 +5,7 @@
   collections:
     - arubanetworks.aoscx
   tasks:
-  - name: Create VLAN 200 with description
-    aoscx_vlan:
-      vlan_id: 200
-      description: This is VLAN 200
+    - name: Create VLAN 200 with description
+      aoscx_vlan:
+        vlan_id: 200
+        description: This is VLAN 200
