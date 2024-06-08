@@ -1,11 +1,10 @@
----
-- name: Configure VLAN on Aruba AOS-CX Switch
-  hosts: all
-  gather_facts: false
+- hosts: all
   collections:
     - arubanetworks.aoscx
+  gather_facts: False    
   tasks:
-    - name: Create VLAN 200 with description
+    - name: Create VLAN 300 with description and name
       aoscx_vlan:
-        vlan_id: 200
-        description: This is VLAN 200
+        vlan_id: 300
+        name: UPLINK_VLAN
+        description: This is VLAN 300
