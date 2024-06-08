@@ -2,5 +2,7 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: Ping the device
-      ping:
+    - name: Create VLAN 200 with description
+      aoscx_vlan:
+        vlan_id: 200
+        description: This is VLAN 200
