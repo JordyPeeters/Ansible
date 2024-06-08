@@ -1,6 +1,6 @@
 ---
 - name: Configure VLAN on Aruba AOS-CX Switch
-  hosts: aruba
+  hosts: all
   gather_facts: false
   collections:
     - arubanetworks.aoscx
