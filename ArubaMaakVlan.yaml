@@ -2,6 +2,8 @@
   collections:
     - arubanetworks.aoscx
   gather_facts: False
+  vars:
+    ansible_python_interpreter: /usr/bin/python3    
   connection: httpapi
   tasks:
     - name: Create VLAN 300 with description and name
