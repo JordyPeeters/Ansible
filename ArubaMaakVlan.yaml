@@ -3,6 +3,7 @@
     - arubanetworks.aoscx
   vars:
     ansible_python_interpreter: /usr/bin/python3  
+    ansible_network_os: arubanetworks.aoscx.aoscx
   gather_facts: False
   connection: arubanetworks.aoscx.aoscx
   tasks:
