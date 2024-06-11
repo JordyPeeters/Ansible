@@ -1,10 +1,23 @@
 - hosts: all
   collections:
-    - arubanetworks.aoscx  
+    - arubanetworks.aoscx
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   gather_facts: False
   tasks:
-    - name: Create VLAN 300 with description and name
-      aoscx_vlan:
-        vlan_id: 300
-        name: UPLINK_VLAN
-        description: This is VLAN 300
+    - name: Adding or Updating Banner
+      aoscx_banner:
+        banner_type: banner
+        banner: "Hi!"
+
+- hosts: all
+  collections:
+    - arubanetworks.aoscx
+  gather_facts: False
+  vars:
+    ansible_connection: network_cli
+  tasks:
+    - name: Execute show run on the switch
+      aoscx_command:
+        commands:
+          - show run
