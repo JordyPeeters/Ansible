@@ -3,6 +3,7 @@
     - arubanetworks.aoscx
   vars:
     ansible_python_interpreter: /usr/bin/python3
+  connection: arubanetworks.aoscx.aoscx
   gather_facts: False
   tasks:
     - name: test
