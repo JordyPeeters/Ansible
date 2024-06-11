@@ -1,4 +1,0 @@
-paramiko
-requests
-ansible-pylibssh
-pyaoscx>=2.6.0
