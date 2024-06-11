@@ -1,10 +1,8 @@
 - hosts: all
-  collections:
-    - arubanetworks.aoscx
-  gather_facts: False
-  connection: local  # Specify the connection type as HTTP API
+  roles:
+    - role: arubanetworks.aoscx_role
   tasks:
-    - name: Adding or Updating Banner
-      aoscx_banner:
-        banner_type: banner
-        banner: "Hi!"
+    - name: Create Vlan 300
+      aoscx_vlan:
+        vlan_id: "300"
+        description: "with ansible" 
