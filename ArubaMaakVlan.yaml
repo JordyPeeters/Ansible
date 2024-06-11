@@ -1,12 +1,6 @@
 - hosts: all
   collections:
     - arubanetworks.aoscx
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
-    ansible_host: 192.168.1.141
-    ansible_user: admin
-    ansible_password: admin
-    ansible_network_os: arubanetworks.aoscx.aoscx
   connection: arubanetworks.aoscx.aoscx
   gather_facts: False
   tasks:
