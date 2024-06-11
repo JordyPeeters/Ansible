@@ -4,7 +4,6 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   connection: arubanetworks.aoscx.aoscx
-  network_os: arubanetworks.aoscx.aoscx
   gather_facts: False
   tasks:
   - name: Create VLAN 200 with description
