@@ -4,7 +4,7 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   gather_facts: False
-  ansible_connection: httpapi  # Specify the connection type as HTTP API
+  connection: httpapi  # Specify the connection type as HTTP API
   ansible_httpapi_use_ssl: true
   ansible_httpapi_validate_certs: False
   tasks:
