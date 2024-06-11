@@ -4,7 +4,7 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   gather_facts: False
-  connection: httpapi  # Specify the connection type as HTTP API
+  connection: local  # Specify the connection type as HTTP API
   tasks:
     - name: Adding or Updating Banner
       aoscx_banner:
