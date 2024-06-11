@@ -4,20 +4,9 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   gather_facts: False
+  connection: httpapi  # Specify the connection type as HTTP API
   tasks:
     - name: Adding or Updating Banner
       aoscx_banner:
         banner_type: banner
         banner: "Hi!"
-
-- hosts: all
-  collections:
-    - arubanetworks.aoscx
-  gather_facts: False
-  vars:
-    ansible_connection: network_cli
-  tasks:
-    - name: Execute show run on the switch
-      aoscx_command:
-        commands:
-          - show run
