@@ -6,7 +6,7 @@
   connection: arubanetworks.aoscx.aoscx
   gather_facts: False
   tasks:
-    - name: test
-      aoscx_interface:
-        name: 1/1/1
-        description: "with ansible"
+  - name: Create VLAN 200 with description
+    aoscx_vlan:
+      vlan_id: 200
+      description: This is VLAN 200
