@@ -1,4 +1,4 @@
 paramiko
 requests
 ansible-pylibssh
-pyaoscx>=2.6.0
+pip3 install pyaoscx>=2.0.0
