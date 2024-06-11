@@ -1,0 +1,8 @@
+- name: Check if Apache is installed
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Check if Apache is installed (Debian/Ubuntu)
+      apt:
+        name: apache2
+        state: present
